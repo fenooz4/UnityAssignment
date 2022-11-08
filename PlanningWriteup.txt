@@ -1,0 +1,24 @@
+I plan to make a shop system for my tool. The core elements that define my tool are:
+-The ability to buy and sell an item
+-Item price and resale price
+-Item stats and name, Special Item effects, and Item Icon/Visuals
+-A UI which can display these items and their prices, and can affect the item buyer's amount of money
+
+
+Implementation Steps:
+
+-Item Descriptor class - non-monobehavior: this will hold item variables such as name,stats,description, and get methods. small scale and simple for getting information and displaying it
+
+-Inventory class: an array of items, which can get information on all the items you have and rearrange items. will also always include a "gold" variable to check if there is enough gold to purchase a specific item. add/subtract gold methods
+
+-Inventory UI, which displays all items in inventory, including picutres, name, stats and description, cost
+-Shop UI, similar to Inventory UI
+
+Challenges: depending on what kind of item system this is, items can also have a prefab name attatched to load when utilized.
+	-if the item system is like league, then only the stats and effect matter, as the items will never actually be used or consumed
+	-if the item system is like Zelda BOTW, then the prefab matters to load a specific weapon or tool with unique effects and unique 		scripts attatched.
+
+####
+	var loadedPrefabResource = LoadPrefabFromFile("ItemName");
+  	Instantiate(loadedPrefabResource, Vector3.zero, Quaternion.identity);
+####
