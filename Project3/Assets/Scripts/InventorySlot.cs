@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
     Item item;
     int quantity;
@@ -30,4 +31,14 @@ public class InventorySlot : MonoBehaviour
     {
         return item;
     }
+    public void OnPointerClick(PointerEventData pointerEventData)
+    {
+        //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
+        Debug.Log(name + " Game Object Clicked!");
+    }
+
+
+
+
+
 }

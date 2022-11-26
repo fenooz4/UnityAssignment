@@ -349,10 +349,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/ButtonDrawer.cs"
 "Assets/Scripts/Inventory.cs"
 "Assets/Scripts/InventorySlot.cs"
 "Assets/Scripts/Item.cs"
 "Assets/Scripts/ItemType.cs"
+"Assets/Scripts/SaveItems.cs"
+"Assets/Scripts/Shop.cs"
+"Assets/Scripts/ShopSlot.cs"
 -langversion:9.0
 
 /deterministic
